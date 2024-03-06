@@ -5,7 +5,7 @@ services:
       PGID: $PGID
       PUID: $PUID
       TZ: $TZ
-    image: filebrowser/filebrowser
+    image: filebrowser/filebrowser:latest
     deploy:
       resources:
         reservations:

@@ -2,7 +2,7 @@ name: adguard-home
 services:
   app:
     container_name: adguard-home
-    image: adguard/adguardhome
+    image: adguard/adguardhome:latest
     environment:
       - PUID=$PUID
       - PGID=$PGID
