@@ -36,14 +36,14 @@ x-casaos:
   description:
     en_us: File Browser - Webbased File Browser including sharing functions etc.
   developer: File Browser
-  icon: https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/FileBrowser/icon.png
+  icon: https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/filebrowser/icon.png
   screenshot_link:
-    - https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/FileBrowser/screenshot-1.jpg
-    - https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/FileBrowser/screenshot-2.jpg
-    - https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/FileBrowser/screenshot-3.jpg
+    - https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/filebrowser/screenshot-1.jpg
+    - https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/filebrowser/screenshot-2.jpg
+    - https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/filebrowser/screenshot-3.jpg
   tagline:
     en_us: Upload, delete, preview, rename, edit and share your files.
-  thumbnail: https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/FileBrowser/thumbnail.jpg
+  thumbnail: https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/filebrowser/thumbnail.jpg
   tips:
     before_install:
       en_us: |
