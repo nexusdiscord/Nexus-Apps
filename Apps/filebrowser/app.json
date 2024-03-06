@@ -1,0 +1,8 @@
+{
+	"app": "FileBrowser",
+	"app_url": "https://filebrowser.org",
+	"image": "filebrowser/filebrowser",
+	"image_url": "https://github.com/filebrowser/filebrowser",
+	"tag": "latest",
+	"description": "File Browser - Webbased File Browser including sharing functions etc."
+}
