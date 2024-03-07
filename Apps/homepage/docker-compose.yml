@@ -1,0 +1,31 @@
+name: homepage-nexus
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    ports:
+      - target: 3000
+        published: ${WEBUI_PORT:-3000}
+        protocol: tcp
+    volumes:
+      - /DATA/AppData/$AppID/config:/app/config
+      - /var/run/docker.sock:/var/run/docker.sock
+
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+    - arm
+  main: homepage
+  description:
+    en_us: A modern, fully static, fast, secure fully proxied, highly customizable application dashboard with integrations for over 100 services and translations into multiple languages. Easily configured via YAML files or through docker label discovery.
+  tagline:
+    en_us: Homepage
+  developer: gethomepage
+  author: Nexus-Apps
+  icon: https://gethomepage.dev/v0.7.3/assets/light_squircle@2x.png
+  thumbnail: ""
+  title:
+    en_us: Homepage
+  category: Nexus-Apps
+  port_map: ${WEBUI_PORT:-3000}

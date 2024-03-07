@@ -31,11 +31,11 @@ x-casaos:
     - arm64
     - arm
   main: ariang
-  author: hurlenko
+  author: Nexus-Apps
   category: Nexus-Apps
   description:
     en_us: AriaNg is a modern web frontend making aria2 easier to use.
-  developer: mayswind
+  developer: hurlenko
   icon: https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/ariang/AriaNg.ico
   screenshot_link:
     - https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/ariang/desktop.png

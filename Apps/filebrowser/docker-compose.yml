@@ -31,11 +31,11 @@ x-casaos:
     - arm64
     - arm
   main: filebrowser
-  author: filebrowser
+  author: Nexus-Apps
   category: Nexus-Apps
   description:
     en_us: File Browser - Webbased File Browser including sharing functions etc.
-  developer: File Browser
+  developer: FileBrowser
   icon: https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/filebrowser/icon.png
   screenshot_link:
     - https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/filebrowser/screenshot-1.jpg
