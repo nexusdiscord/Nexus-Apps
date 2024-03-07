@@ -1,4 +1,4 @@
-name: adguard-home
+name: adguard-home-nexus
 services:
   app:
     container_name: adguard-home
