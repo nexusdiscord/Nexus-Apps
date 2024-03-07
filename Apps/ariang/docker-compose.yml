@@ -4,8 +4,6 @@ services:
     environment:
       PGID: $PGID
       PUID: $PUID
-      ARIA2RPCPORT: 443
-      RPC_SECRET: NOBODYKNOWSME
     image: hurlenko/aria2-ariang:latest
     deploy:
       resources:
