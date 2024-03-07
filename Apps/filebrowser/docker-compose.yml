@@ -54,5 +54,6 @@ x-casaos:
         | `admin`    | `admin`    |
   title:
     en_us: FileBrowser
+  store_app_id: filebrowser-nexus
   index: /
   port_map: "10180"
