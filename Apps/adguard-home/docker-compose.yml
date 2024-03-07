@@ -39,7 +39,7 @@ x-casaos:
   scheme: http
   tagline:
     en_us: AdGuard Home is a network-wide software for blocking ads & tracking. After you set it up, it’ll cover ALL your home devices, and you don’t need any client-side software for that. 
-  store_app_id: adguard-home
+  store_app_id: adguard-home-nexus
   title:
     en_us: AdGuard Home
   screenshot_link:
