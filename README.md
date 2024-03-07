@@ -1,2 +1,2 @@
 ## Nexus-Apps
-`https://github.com/nexusdiscord/Nexus-Apps/archive/refs/heads/master.zip`
+```https://github.com/nexusdiscord/Nexus-Apps/archive/refs/heads/main.zip```
