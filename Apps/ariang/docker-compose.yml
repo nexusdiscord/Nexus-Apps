@@ -1,0 +1,51 @@
+name: ariang-nexus
+services:
+  ariang:
+    environment:
+      PGID: $PGID
+      PUID: $PUID
+      ARIA2RPCPORT: 443
+      RPC_SECRET: NOBODYKNOWSME
+    image: hurlenko/aria2-ariang:latest
+    deploy:
+      resources:
+        reservations:
+          memory: 64M
+    network_mode: bridge
+    ports:
+      - target: 8080
+        published: ${WEBUI_PORT:-8080}
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /DATA/AppData/$AppID/conf
+        target: /aria2/conf
+      - type: bind
+        source: /DATA/Downloads
+        target: /aria2/data
+    container_name: ariang
+
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+    - arm
+  main: ariang
+  author: hurlenko
+  category: Nexus-Apps
+  description:
+    en_us: AriaNg is a modern web frontend making aria2 easier to use.
+  developer: mayswind
+  icon: https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/ariang/AriaNg.ico
+  screenshot_link:
+    - https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/ariang/desktop.png
+    - https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/ariang/mobile.png
+  tagline:
+    en_us: torrent, http, downloader
+  thumbnail: https://cdn.jsdelivr.net/gh/nexusdiscord/Nexus-Apps@main/Apps/ariang/desktop.png
+  title:
+    en_us: AriaNg
+  store_app_id: ariang-nexus
+  index: /
+  port_map: ${WEBUI_PORT:-8080}
