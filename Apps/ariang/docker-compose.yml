@@ -4,6 +4,8 @@ services:
     environment:
       PGID: $PGID
       PUID: $PUID
+      ARIA2RPCPORT: ${WEBUI_PORT:-8080}
+      RPC_SECRET: NOBODYKNOWSME
     image: hurlenko/aria2-ariang:latest
     deploy:
       resources:
