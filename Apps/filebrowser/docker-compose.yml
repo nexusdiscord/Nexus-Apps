@@ -31,7 +31,7 @@ x-casaos:
     - arm64
     - arm
   main: filebrowser
-  author: Filebrowser
+  author: filebrowser
   category: Nexus-Apps
   description:
     en_us: File Browser - Webbased File Browser including sharing functions etc.
