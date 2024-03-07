@@ -1,4 +1,4 @@
-name: filebrowser
+name: filebrowser-nexus
 services:
   filebrowser:
     environment:
