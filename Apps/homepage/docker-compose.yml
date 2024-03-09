@@ -8,7 +8,7 @@ services:
     container_name: homepage
     ports:
       - target: 3000
-        published: ${WEBUI_PORT:-3000}
+        published: 80
         protocol: tcp
     volumes:
       - /DATA/AppData/$AppID/config:/app/config
@@ -31,4 +31,4 @@ x-casaos:
   title:
     en_us: Homepage
   category: Nexus-Apps
-  port_map: ${WEBUI_PORT:-3000}
+  port_map: 80
