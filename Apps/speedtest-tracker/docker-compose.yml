@@ -1,34 +1,33 @@
-name: speedtest-tracker-nexus
+name: metube-nexus
 services:
-  speedtest-tracker:
+  metube:
     environment:
       PGID: $PGID
       PUID: $PUID
-      DB_CONNECTION: sqlite
-    image: lscr.io/linuxserver/speedtest-tracker:latest
-    container_name: speedtest-tracker
+    image: ghcr.io/alexta69/metube
+    container_name: metube
     ports:
-      - target: 80
-        published: ${WEBUI_PORT:-80}
+      - target: 8081
+        published: ${WEBUI_PORT:-8081}
         protocol: tcp
     volumes:
-      - /DATA/AppData/$AppID/config:/config
+      - /DATA:/downloads
 
 x-casaos:
   architectures:
     - amd64
     - arm64
     - arm
-  main: speedtest-tracker
+  main: metube
   description:
-    en_us: Speedtest Tracker is a self-hosted internet performance tracking application that runs speedtest checks against Ookla's Speedtest service.
+    en_us: Web GUI for youtube-dl (using the yt-dlp fork) with playlist support. Allows you to download videos from YouTube and dozens of other sites.
   tagline:
-    en_us: Speedtest Tracker
-  developer: alexjustesen
+    en_us: MeTube
+  developer: alexta69
   author: Nexus-Apps
-  icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/MySpeed/icon.png
+  icon: https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@main/png/metube.png
   thumbnail: ""
   title:
-    en_us: Speedtest Tracker
+    en_us: MeTube
   category: Nexus-Apps
-  port_map: ${WEBUI_PORT:-80}
+  port_map: ${WEBUI_PORT:-8081}
