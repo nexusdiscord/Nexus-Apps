@@ -1,0 +1,25 @@
+name: jmusicbot-nexus
+services:
+  jmusicbot:
+    image: ghcr.io/yojoshb/jmusicbot-docker:latest
+    container_name: jmusicbot
+    volumes:
+      - /DATA/AppData/$AppID/config:/config
+
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+    - arm
+  main: jmusicbot
+  description:
+    en_us: A cross-platform Discord music bot with a clean interface, and that is easy to set up and run yourself!
+  tagline:
+    en_us: jmusicbot
+  developer: yojoshb
+  author: Nexus-Apps
+  icon: https://jmusicbot.com/assets/images/logo.png
+  thumbnail: ""
+  title:
+    en_us: jmusicbot
+  category: Nexus-Apps
