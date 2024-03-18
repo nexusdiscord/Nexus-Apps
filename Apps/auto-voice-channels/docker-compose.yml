@@ -10,7 +10,7 @@ services:
       DISABLE_LOOP: false
       RDY_MESSAGE: false
       AWS: false
-    image: ghcr.io/nexusdiscord/docker-auto-voice-channels:latest
+    image: ghcr.io/nexusdiscord/docker-auto-voice-channel:latest
     container_name: auto-voice-channels
     volumes:
       - /DATA/AppData/$AppID/guilds:/AutoVoiceChannels/guilds:Z
