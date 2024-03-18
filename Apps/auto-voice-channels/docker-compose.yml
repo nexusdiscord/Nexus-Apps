@@ -1,0 +1,34 @@
+name: auto-voice-channels-nexus
+services:
+  auto-voice-channels:
+    environment:
+      ADMIN_ID: <ADMIN ID>
+      CLIENT_ID: <CLIENT_ID>
+      TZ: $TZ
+      TOKEN: <TOKEN>
+      HEARTBEAT_TIMEOUT: 60
+      DISABLE_LOOP: false
+      RDY_MESSAGE: false
+      AWS: false
+    image: vinanrra/auto-voice-channels:latest
+    container_name: auto-voice-channels
+    volumes:
+      - /DATA/AppData/$AppID/guilds:/AutoVoiceChannels/guilds:Z
+
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+    - arm
+  main: auto-voice-channels
+  description:
+    en_us: Auto Voice Channels is an open-source Discord bot that allows users to create voice channels dynamically as they're needed, and delete them when they're not.
+  tagline:
+    en_us: Auto Voice Channels
+  developer: vinanrra
+  author: Nexus-Apps
+  icon: https://wiki.dotsbots.com/dots_bots_t.png
+  thumbnail: ""
+  title:
+    en_us: Auto Voice Channels
+  category: Nexus-Apps
