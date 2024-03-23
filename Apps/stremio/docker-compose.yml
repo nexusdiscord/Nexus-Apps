@@ -1,0 +1,35 @@
+name: stremio-nexus
+services:
+  metube:
+    environment:
+      NO_CORS: 1
+    image: tsaridas/stremio-docker:latest
+    container_name: stremio
+    ports:
+      - target: 8080
+        published: ${WEBUI_PORT:-8080}
+        protocol: tcp
+      - target: 11470
+        published: "11470"
+        protocol: tcp
+    volumes:
+      - /DATA/AppData/$AppID/stremio-server:/stremio-server
+
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+    - arm
+  main: stremio
+  description:
+    en_us: Stremio offers a secure, modern and seamless entertainment experience. With its easy-to-use interface and diverse content library, including 4K HDR support, users can enjoy their favorite movies and TV shows across all their devices. And with its commitment to security, Stremio is the ultimate choice for a worry-free, high-quality streaming experience.
+  tagline:
+    en_us: Stremio
+  developer: tsaridas
+  author: Nexus-Apps
+  icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Stremio/icon.png
+  thumbnail: ""
+  title:
+    en_us: Stremio
+  category: Nexus-Apps
+  port_map: ${WEBUI_PORT:-8080}
